@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: blog_logo.png
+image: images/blog_logo.png
 format: html
 about:
   template: jolla
