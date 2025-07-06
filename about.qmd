@@ -1,0 +1,80 @@
+---
+title: "About"
+image: blog_logo.png
+format: html
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+## About this blog
+
+We’re four recent college graduates with a passion for sports and a love for numbers. Armed with degrees in data science and statistics, we’re here to explore the world of sports analytics—breaking down games, trends, and stats to uncover the stories behind the scores. Whether you’re a fellow analytics enthusiast or just a fan of the game, join us as we bring fresh insights and data-driven perspectives to the world of sports.
+
+## The Team
+
+<style>
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  max-width: 1200px;
+  margin: 2em auto;
+}
+.team-member {
+  text-align: center;
+}
+.team-member img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+</style>
+
+<div class="team-grid">
+
+<div class="team-member">
+  <img src="images/gehr_headshot.jpg" alt="Adam Gehr">
+  <div><strong>Adam Gehr</strong></div>
+  <div>Robert Morris University</div>
+  <div>Statistics and Data Science</div>
+  <div>Class of 2025</div>
+</div>
+
+<div class="team-member">
+  <img src="images/berkey_headshot.jpg" alt="Brogan Berkey">
+  <div><strong>Brogan Berkey</strong></div>
+  <div>Robert Morris University</div>
+  <div>Statistics and Data Science</div>
+  <div>Class of 2024</div>
+</div>
+
+<div class="team-member">
+  <img src="images/nolan_headshot.jpg" alt="Danny Nolan">
+  <div><strong>Danny Nolan</strong></div>
+  <div>Bucknell University</div>
+  <div>Statistics</div>
+  <div>Class of 2025</div>
+</div>
+
+<div class="team-member">
+  <img src="images/jennings_headshot.jpg" alt="Liam Jennings">
+  <div><strong>Liam Jennings</strong></div>
+  <div>Robert Morris University</div>
+  <div>Statistics and Data Science</div>
+  <div>Class of 2025</div>
+</div>
+
+</div>

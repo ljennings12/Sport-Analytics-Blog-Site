@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "Keystone Stats"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/ljennings12/Sport-Analytics-Blog-Workspace
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme:
+      light: [flatly, theme_light.scss]
+      dark: [flatly, theme_dark.scss]
+    # Optional: honor user's OS preference
+    respect-user-color-scheme: true
+    css: styles.css
+
+
+

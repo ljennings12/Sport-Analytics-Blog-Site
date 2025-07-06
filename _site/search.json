@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/nba_mock_draft/mockdraft2025.html",
+    "href": "posts/nba_mock_draft/mockdraft2025.html",
+    "title": "2025 NBA Mock Draft",
+    "section": "",
+    "text": "The 2025 NBA Draft is upon us, and executives around the league have already kicked into high gear. Impact players like Desmond Bane, Jrue Holiday, and Kristaps Porzingis have already been traded, and the wheeling and dealing is certain to continue throughout the draft, which now spans two days. This year’s draft features a generational prospect, loaded rosters with unusually high selections, and a team with five (5!) first-round choices. Let’s take a look at how the first round might play out.\n1. Dallas Mavericks: F Cooper Flagg, Duke\n2. San Antonio Spurs: G Dylan Harper, Rutgers\n3. Philadelphia 76ers: G VJ Edgecombe, Baylor\n4. Charlotte Hornets: F Ace Bailey, Rutgers\n5. Utah Jazz: G Tre Johnson, Texas\nFlagg and Harper seem like locks to go 1 and 2, but it gets interesting when the 76ers pick. Ace Bailey, probably presumed to go third based on sheer talent, hasn’t worked out for any teams and actually canceled his workout for Philadelphia. His tumultuous pre-draft process clashes with Edgecombe’s, as teams love the Baylor guard’s motor and makeup. The Sixers, who have had their share of first-round flameouts (see Simmons, Ben or Fultz, Markelle), take the safe route and opt for the bouncy Bahamian. Charlotte snaps up Bailey with the fourth pick, as he will have an opportunity to contribute immediately alongside LaMelo Ball and Brandon Miller. Johnson has the potential to develop into an elite scorer. He averaged 19.9 points per game as a freshamn in the SEC and pairs a 6’5’’ frame with a 40% 3-point percentage.\n6. Washington Wizards: G Jeremiah Fears, Oklahoma\n7. New Orleans Pelicans: C Khaman Maluach, Duke\n8. Brooklyn Nets: G Kon Knueppel, Duke\n9. Toronto Raptors: G Kasparas Jakucionis, Illinois\n10. Phoenix Suns: C Derik Queen, Maryland\nWith Maluach and Knueppel going 7th and 8th, the lottery is heavy on Blue Devils. Both are safer picks who flourished in their roles at Duke but likely won’t grow into superstars like the top picks could. Fears is on the smaller side (6’2’’), but he is dynamic with the ball in his hands and displayed a knack for clutch buckets at Oklahoma. While they play different positions, Jakucionis and Queen are deft facilitators and would be welcome additions for teams at the back end of the lottery.\n11. Portland Trail Blazers: F Noa Essengue, Ratiopharm Ulm\n12. Chicago Bulls: F Collin Murray-Boyles, South Carolina\n13. Atlanta Hawks: F Carter Bryant, Arizona\n14. San Antonio Spurs: G Egor Demin, BYU\n15. Oklahoma City Thunder: C Joan Beringer, KK Cedevita Olimpija\nOutside of Murray-Boyles, these picks are projects. All are either 18 or 19 years old, and none averaged over 11 points last season. Demin is a supersized 6’8’’ PG, but he only knocked down 27.3% of his threes at BYU. Essengue also struggled from beyond the arc, but he brings size and defense to Portland. Bryant only averaged 6.5 points per game with the Wildcats, though the Hawks may see him as a DeAndre Hunter facsimile. The NBA champs are loaded and have no real weaknesses, so they take a flier on the ultimate project in Beringer. The Frenchman averaged less than 6 PPG in Slovenia. His 7-foot frame comes with remarkable upside.\n16. Memphis Grizzlies: F Cedric Coward, Washington St.\n17. Minnesota Timberwwolves: F Asa Newell, Georgia\n18. Washington Wizards: C Thomas Sorber, Georgetown\n19. Brooklyn Nets: C Danny Wolf, Michigan\n20. Miami Heat: G Walter Clayton Jr, Florida\nYou might remember Clayton from the NCAA Tournament, as his unconscious shooting led the Gators to a National Championship. His age is working against him, but Clayton has the tools to help a team win right away. Wolf was another fixture in March who pairs the body of a center with the playmaking ability of a guard. In a season hindered by injury, Sorber averaged 14.5 PPG and 8.5 RPG as a Hoya. He and Fears would be solid building blocks for a Wizards team that has been treading water for too long.\n21. Utah Jazz: F Hugo Gonzalez, Real Madrid\n22. Brooklyn Nets: G Nolan Traore, Saint-Quentin\n23. New Orleans Pelicans: F Liam NcNeeley, Uconn\n24. Oklahoma City Thunder: F Noah Penda, Le Mans Sarthe\n25. Orlando Magic: F Rasheer Fleming, St. Joseph’s\nThe Thunder double down on Frenchmen and take Penda at pick 24. It wouldn’t be surprising to see GM Sam Presti move this pick for future assets. Gonzalez and Traore are both 19 years of age and will need time to develop. Utah and Brooklyn are years away from making noise and can give them plenty of playing time. McNeeley, who was teammates with Flagg, Queen, and Newell in high school, can do everything well but lacks a calling card.\n26. Brooklyn Nets: F Will Riley, Illinois\n27. Brooklyn Nets: F Drake Powell, North Carolina\n28. Boston Celtics: G Nique Clifford, Colorado St.\n29. Phoenix Suns: C Ryan Kalkbrenner, Creighton\n30. Los Angeles Clippers: F Johni Broome, Auburn\nIf it seems like you’ve been seeing a lot of Nets mentions, it’s because you have. Brooklyn has a staggering five first-round picks, and it would be shocking if none were dealt. The last picks of the round don’t lack for experience. Clifford, Kalkbrenner, and Broome are all 23 and could join an NBA rotation from the get-go. With the injury to Jayson Tatum and trades of Holiday and Porzingis, Boston is in a bridge year and may ask for immediate contributions from Clifford. The Suns are preparing for life without Kevin Durant and currently roster a guard-heavy team. Kalkbrenner provides a serious lob threat and stifling rim protector."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "We’re four recent college graduates with a passion for sports and a love for numbers. Armed with degrees in data science and statistics, we’re here to explore the world of sports analytics—breaking down games, trends, and stats to uncover the stories behind the scores. Whether you’re a fellow analytics enthusiast or just a fan of the game, join us as we bring fresh insights and data-driven perspectives to the world of sports."
+  },
+  {
+    "objectID": "about.html#about-this-blog",
+    "href": "about.html#about-this-blog",
+    "title": "About",
+    "section": "",
+    "text": "We’re four recent college graduates with a passion for sports and a love for numbers. Armed with degrees in data science and statistics, we’re here to explore the world of sports analytics—breaking down games, trends, and stats to uncover the stories behind the scores. Whether you’re a fellow analytics enthusiast or just a fan of the game, join us as we bring fresh insights and data-driven perspectives to the world of sports."
+  },
+  {
+    "objectID": "about.html#the-team",
+    "href": "about.html#the-team",
+    "title": "About",
+    "section": "The Team",
+    "text": "The Team\n\n\n\n\n\nAdam Gehr\n\n\nRobert Morris University\n\n\nStatistics and Data Science\n\n\nClass of 2025\n\n\n\n\n\nBrogan Berkey\n\n\nRobert Morris University\n\n\nStatistics and Data Science\n\n\nClass of 2024\n\n\n\n\n\nDanny Nolan\n\n\nBucknell University\n\n\nStatistics\n\n\nClass of 2025\n\n\n\n\n\nLiam Jennings\n\n\nRobert Morris University\n\n\nStatistics and Data Science\n\n\nClass of 2025"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJul 5, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJul 2, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n2025 NBA Mock Draft\n\n\n\n\n\n\nBasketball\n\n\n\nForecasting the destinations for the next generation of NBA stars\n\n\n\n\n\nJun 25, 2025\n\n\nDanny Nolan\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  }
+]

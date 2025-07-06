@@ -1,0 +1,154 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+
+// Font settings
+$font-family-sans-serif: 'Roboto', Arial, sans-serif;
+$headings-font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+
+// Brand colors
+$primary: #a6192e;
+$navy: #14234b;
+$body-bg: #14234b;
+$body-color: #ffffff;
+$link-color: #a6192e;
+
+// Navbar
+$navbar-bg: #14234b;
+$navbar-fg: #ffffff;
+$navbar-active-color: #a6192e;
+$navbar-hover-color: #a6192e;
+
+// Accent
+$primary: #a6192e;
+
+// Code blocks (optional)
+$code-bg: #232c4b;
+$code-color: #ffffff;
+
+/*-- scss:rules --*/
+
+/* Navbar active and hover */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #a6192e !important;
+  border-bottom: 2px solid #a6192e;
+  background: transparent;
+}
+
+/* Category pills active */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #a6192e;
+}
+
+/* Sort and Filter UI */
+.quarto-listing-sort-ui,
+.quarto-listing-filter-ui {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-bottom: 1em;
+}
+.quarto-listing-sort-ui select,
+.quarto-listing-filter-ui input {
+  border: 1px solid #a6192e;
+  border-radius: 4px;
+  padding: 0.4em 0.7em;
+  font-size: 1em;
+  background: #14234b;
+  color: #fff;
+}
+.quarto-listing-sort-ui label,
+.quarto-listing-filter-ui label {
+  color: #a6192e;
+  font-weight: 500;
+  margin-right: 0.5em;
+}
+
+/* Card/Post Listing Styles */
+.quarto-grid-item, .quarto-post, .blog-card .card {
+  background: #192952;
+  border: 1.5px solid #232c4b;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20,35,75,0.22);
+  padding: 1.5em 1.2em;
+  margin-bottom: 2em;
+  transition: 
+    box-shadow 0.25s cubic-bezier(0.4,0,0.2,1),
+    transform 0.18s cubic-bezier(0.4,0,0.2,1),
+    border-color 0.18s;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  color: #fff;
+}
+
+/* Hover effect: shadow, border, slight scale, accent color */
+.quarto-grid-item:hover, .quarto-post:hover, .blog-card .card:hover {
+  box-shadow: 0 8px 28px 0 rgba(166,25,46,0.14);
+  border-color: #a6192e;
+  transform: translateY(-4px) scale(1.025);
+  background: linear-gradient(120deg, #1e335d 80%, #232c4b 100%);
+}
+
+/* Title styling */
+.quarto-grid-item h3, .quarto-post h3, .blog-card .card-title {
+  font-family: $headings-font-family;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+
+/* Title hover color */
+.quarto-grid-item:hover h3, .quarto-post:hover h3, .blog-card .card:hover .card-title {
+  color: #a6192e;
+}
+
+/* Excerpt/description styling */
+.quarto-grid-item .listing-description, 
+.quarto-post .listing-description, 
+.blog-card .card-text {
+  color: #e0e6f0;
+  font-size: 1em;
+  margin-bottom: 0.6em;
+  font-family: $font-family-sans-serif;
+  opacity: 0.95;
+}
+
+/* Link styling */
+.quarto-grid-item a, .quarto-post a, .blog-card .card a {
+  color: #a6192e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.16s;
+}
+.quarto-grid-item a:hover, .quarto-post a:hover, .blog-card .card a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Consistent spacing for grid/listing */
+.quarto-listing-container, .blog-card-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .quarto-grid-item, .quarto-post, .blog-card .card {
+    padding: 1em 0.7em;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  color: #fff;
+}
