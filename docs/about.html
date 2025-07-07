@@ -38,8 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bf17003df72656337aff664519bf9e29.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-38a14da203c41c9552378055a9e375cd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5139521f3602db722b220480c9018e50.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-152d712bb6269082e193f0da1c8161f0.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -127,29 +127,50 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-<section id="about-this-blog" class="level2">
-<h2 data-anchor-id="about-this-blog">About this blog</h2>
 <p>We’re four recent college graduates with a passion for sports and a love for numbers. Armed with degrees in data science and statistics, we’re here to explore the world of sports analytics—breaking down games, trends, and stats to uncover the stories behind the scores. Whether you’re a fellow analytics enthusiast or just a fan of the game, join us as we bring fresh insights and data-driven perspectives to the world of sports.</p>
-</section>
-<section id="the-team" class="level2">
-<h2 data-anchor-id="the-team">The Team</h2>
+<section id="the-starting-5" class="level1">
+<h1>The Starting 5</h1>
 <style>
 .team-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "member1 member2"
+    "member3 member4"
+    "member5 member5";
   gap: 2em;
   max-width: 1200px;
   margin: 2em auto;
 }
-.team-member {
-  text-align: center;
+.team-member:nth-child(1) { grid-area: member1; }
+.team-member:nth-child(2) { grid-area: member2; }
+.team-member:nth-child(3) { grid-area: member3; }
+.team-member:nth-child(4) { grid-area: member4; }
+.team-member:nth-child(5) { 
+  grid-area: member5; 
+  justify-self: center;
 }
 .team-member img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "member1"
+      "member2"
+      "member3"
+      "member4"
+      "member5";
+  }
 }
 </style>
 <div class="team-grid">
@@ -202,6 +223,21 @@ Class of 2025
 <img src="images/jennings_headshot.jpg" alt="Liam Jennings">
 <div>
 <strong>Liam Jennings</strong>
+</div>
+<div>
+Robert Morris University
+</div>
+<div>
+Statistics and Data Science
+</div>
+<div>
+Class of 2025
+</div>
+</div>
+<div class="team-member">
+<img src="images/wigton_headshot.jpg" alt="Sam Wigton">
+<div>
+<strong>Sam Wigton</strong>
 </div>
 <div>
 Robert Morris University
