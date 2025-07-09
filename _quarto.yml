@@ -5,7 +5,9 @@ project:
 website:
   title: "SBW Analytics"
   navbar:
+    logo: images/blog_logo.png
     right:
+      - index.qmd
       - about.qmd
       - icon: github
         href: https://github.com/ljennings12/Sport-Analytics-Blog-Workspace
@@ -13,11 +15,12 @@ website:
       - icon: twitter
         href: https://twitter.com
         target: "blank"
+
 format:
   html:
     theme:
-      light: [flatly, theme_light.scss]
-      dark: [flatly, theme_dark.scss]
+      light: flatly
+      dark: darkly
     # Optional: honor user's OS preference
     respect-user-color-scheme: true
     css: styles.css

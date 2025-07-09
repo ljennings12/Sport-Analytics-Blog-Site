@@ -1,8 +1,8 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Joseph Chestnut"
 date: "2025-07-02"
-categories: [news]
+categories: [Hot Dog Eating Contest, Analytics]
 ---
 
 This is the first post in a Quarto blog. Welcome!

@@ -1,1 +1,53 @@
 /* css styles */
+.navbar-logo {
+  max-height: 80px; /* Adjust the value as needed */
+  height: 80px;     /* You can also set width if needed */
+}
+/* Always make the header (navbar) background white and text black */
+.navbar, .navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-nav {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Make sure dropdown menus also have white background */
+.navbar .dropdown-menu {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Light mode: pale body, black text */
+body.quarto-light {
+  background-color: #fdf5e3 !important;
+  color: #000 !important;
+}
+
+/* Dark mode: blue body, white text */
+body.quarto-dark {
+  background-color: #19386f !important;
+  color: #fff !important;
+}
+
+/* Make sure headers and other elements inherit color */
+body.quarto-dark h1,
+body.quarto-dark h2,
+body.quarto-dark h3,
+body.quarto-dark h4,
+body.quarto-dark h5,
+body.quarto-dark h6 {
+  color: #fff !important;
+}
+body.quarto-light h1,
+body.quarto-light h2,
+body.quarto-light h3,
+body.quarto-light h4,
+body.quarto-light h5,
+body.quarto-light h6 {
+  color: #000 !important;
+}
+
+
+/* Optional: ensure links and other elements are readable in both modes
+body[data-bs-theme="dark"] a {
+  color: #ffd700; /* Example: gold links in dark mode */
+}
+*/
