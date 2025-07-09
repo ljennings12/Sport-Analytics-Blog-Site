@@ -23,7 +23,7 @@ body.quarto-light {
 
 /* Dark mode: blue body, white text */
 body.quarto-dark {
-  background-color: #19386f !important;
+  background-color: #465571 !important;
   color: #fff !important;
 }
 
@@ -51,3 +51,71 @@ body[data-bs-theme="dark"] a {
   color: #ffd700; /* Example: gold links in dark mode */
 }
 */
+
+/* Light mode: post title color */
+body.quarto-light .quarto-title-block .title,
+body.quarto-light .quarto-title-block .quarto-title,
+body.quarto-light .quarto-title {
+  color: #000 !important;
+}
+
+/* Dark mode: post title color */
+body.quarto-dark .quarto-title-block .title,
+body.quarto-dark .quarto-title-block .quarto-title,
+body.quarto-dark .quarto-title {
+  color: #fff !important;
+}
+
+/* --- Post Title Banner and Title Color Fix --- */
+body.quarto-light .quarto-title-banner {
+  background: #fdf5e3 !important;
+}
+body.quarto-dark .quarto-title-banner {
+  background: #465571 !important;
+}
+
+body.quarto-light .quarto-title-banner .title,
+body.quarto-light .quarto-title-banner .quarto-title {
+  color: #000 !important;
+}
+
+body.quarto-dark .quarto-title-banner .title,
+body.quarto-dark .quarto-title-banner .quarto-title {
+  color: #fff !important;
+}
+/* Light mode: category text color */
+body.quarto-light .quarto-category {
+  color: #000 !important; /* Replace with your desired color */
+}
+
+/* Dark mode: category text color */
+body.quarto-dark .quarto-category {
+  color: #fff !important; /* Replace with your desired color */
+}
+body.quarto-light .quarto-category a {
+  color: #000 !important;
+}
+
+body.quarto-dark .quarto-category a {
+  color: #fff !important;
+}
+
+/* Light mode: homepage post preview category color */
+body.quarto-light .listing-category {
+  color: #000 !important;
+}
+
+/* Dark mode: homepage post preview category color */
+body.quarto-dark .listing-category {
+  color: #fff !important;
+}
+
+/* Light mode: homepage post preview category color */
+body.quarto-light .listing-category a {
+  color: #000 !important;
+}
+
+/* Dark mode: homepage post preview category color */
+body.quarto-dark .listing-category a {
+  color: #fff !important;
+}
