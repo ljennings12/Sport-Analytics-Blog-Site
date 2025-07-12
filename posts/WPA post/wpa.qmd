@@ -1,0 +1,74 @@
+---
+title: "Context Neutral Wins and Why You Should Care"
+author: "Danny Nolan"
+date: "2025-07-12"
+categories: [Baseball, Analytics]
+image: soto.jpg
+description: "Using win probability to separate the best from the rest."
+editor: visual
+---
+
+If you're like me, you use any excuse possible to think about baseball.  So when the ballot was released for the 2025 All-Star Game, I found myself voting every day, five times a day.  Some votes were easy, like Cal Raleigh as AL catcher or Aaron Judge in the AL outfield.  I sprinkled in some hometown bias, selecting Phillies Trea Turner and Kyle Schwarber (yes, over Ohtani, I'm sorry).  But over the weeks of voting, I rarely submitted the same ballot from day to day, and the cause for that was the outfield.  Since there are more spots available (3) and options to choose from, there weren't the same clear-cut favorites that dominated other positions.  The NL was especially tough, with seven or eight players warranting my consideration.  Many of these guys had similar stats, so I racked my brain for a way to distinguish the top three.
+
+Let's switch our focus for a second.  Raise your hand if you've seen an NFL game where a team is down big in the 4th quarter.  Suddenly, they're unstoppable for some reason, with a quarterback that looks like Tom Brady and a wide receiver that has turned from Clark Kent into Superman.  You wonder, "Where has this been all game?"  You can put your hand down now.  These moments in games where the outcome is all but decided are called garbage time.  It may be your first instinct to stop watching and do something else with your time once a contest has entered this phase, and I don't blame you.  But be wary.  Stats in garbage time count just the same as the rest.  In football, it can be very easy to identify the "empty stat", where yards are accumulated that have no impact on the game's result.  There are only seventeen games, so the blowouts stick out in our minds.  In basketball, we might dismiss the performance of the best player on a bad team because "someone has to take the shots".  But we often forget that garbage time in baseball is a real thing, too.  Low-leverage situations mean lower-caliber pitching, making it easier for hitters to reach base and improve their stats.  If a batter hits a home run every time he is in the midst of a blowout, his numbers look juicy, but he isn't really making all that much of an impact.  So getting back to the All-Star voting, I wanted to apply this concept.  All the hitters in question are having fantastic seasons, but who is doing it when it really matters?  That's someone I'd like to see in the Midsummer Classic.
+
+Now, let's talk numbers.  Win Probability Added (WPA) is a good place to start for quantifying a player's effect on winning games.  I will explain it using an example.  At a given point in a game, the Yankees have a 40% chance of winning.  Babe Ruth steps up to the plate and wallops a home run.  New York's chances of victory rise to 70%.  For that plate appearance, Ruth has a WPA of 0.3, which is the change in the Yankees' chances of winning (0.7-0.4).  Say instead of going yard, Ruth strikes out, and the Yankees' chances of winning drop to 30%.  His WPA for that at-bat is -0.1.  Every plate appearance comes with a WPA, and it is dependent on both the situation and the outcome.  A home run in a tie game in the ninth inning will come with a much greater WPA than one during a blowout in the sixth.  WPA is additive and accumulated over the course of a season.  
+
+As I said before, WPA is a product of situation and outcome.  However, players can only control the latter.  Since our goal is to compare players to others, we need to account for the fact that all players are thrust into different situations.  Perhaps Player A has a higher WPA than Player B, but that might only be because Player A has had more at bats in high-leverage spots.  To even the playing field, we can use Context Neutral Wins.  To calculate Context Neutral Wins, WPA is divided by the Leverage Index (LI) of a plate appearance.  I won't go into too much detail, but LI essentially quantifies the importance of a situation during a game.  For more info, check out this [FanGraphs explanation](https://library.fangraphs.com/misc/li/){.external target="_blank"}.  Context Neutral Wins allows us to compare players' performance based on WPA in an apples-to-apples way.  
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+cond_wpa_data <- read.csv("wpa_table.csv")
+library(dplyr)
+library(tidyverse)
+library(plotly)
+library(ggplot2)
+#WPA vs. wRC+
+wpa_plot = ggplot(data = cond_wpa_data, 
+           aes(x = wRC_plus, y = WPA_LI, text = paste0(
+      PlayerName, "<br>",
+      "wRC+: ", round(wRC_plus, digits=0), "<br>",
+      "WPA/LI: ", round(WPA_LI, digits=2)
+    ), color=highlight, alpha = 0.7)) +
+  geom_point() +
+  labs(x = "wRC+", y = "Context Neutral Wins (WPA/LI)", 
+       title = "Context Neutral Wins vs. wRC+")+
+  geom_vline(xintercept = 100, linewidth=.5, color = "black") +
+  geom_hline(yintercept = 0, linewidth=.5, color = "black")+
+  scale_color_manual(values = c("Highlight" = "blue", "Other" = "black"))+
+  theme(legend.position = "none")
+ggplotly(wpa_plot, tooltip = "text")
+```
+
+<br><br>
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+wpa_plot2 = ggplot(data = cond_wpa_data, 
+           aes(x = WAR, y = WPA_LI, text = paste0(
+      PlayerName, "<br>",
+      "WAR: ", round(WAR, digits=1), "<br>",
+      "WPA/LI: ", round(WPA_LI, digits=2)
+    ), color=highlight, alpha = 0.7)) +
+  geom_point() +
+  labs(x = "WAR", y = "Context Neutral Wins (WPA/LI)", 
+       title = "Context Neutral Wins vs. WAR")+
+  geom_vline(xintercept = mean(cond_wpa_data$WAR), linewidth=.5, color = "black") +
+  geom_hline(yintercept = 0, linewidth=.5, color = "black")+
+  scale_color_manual(values = c("Highlight" = "blue", "Other" = "black"))+
+  theme(legend.position = "none")
+ggplotly(wpa_plot2, tooltip = "text")
+#cor(cond_wpa_data$WAR, cond_wpa_data$WPA_LI)
+```
+
+<br><br>
+
+The plots above chart Context Neutral Wins against wRC+, a useful one-number summary for offensive output, and WAR, a measurement of overall performance, defense included.  Both plots show a positive correlation, but the correlation between wRC+ and Context Neutral Wins is slightly stronger (about 0.9 vs.0.8).  This makes sense, as both metrics are limited to offensive performance.  Highlighted in blue are the subjects of my NL outfield conundrum, and the plots can help me to make an informed decision.  I'm a fan of WAR, so Pete Crow-Armstrong is an obvious choice.  After that, things get murkier.  Corbin Carroll, Fernando Tatis, Kyle Tucker, and James Wood are all in the 3.7 to 4 WAR range.  I could flip a coin, or I could turn to Context Neutral Wins and see that Wood and Tucker have a slight edge over Tatis and a sizable one over Carroll.  If you love offense, you might vote for Juan Soto, who shines in wRC+ and Context Neutral Wins but whose WAR is held back by defensive limitations.  
+
+As a fan, it's up to you how heavily you want to weigh Context Neutral Wins.  Personally, I like the idea of a statistic rooted in WPA.  I can easily see how much a given at-bat changes the likelihood of a win or a loss and attribute that change to a player.  Is it more complete than WAR or more intuitive than OPS?  Probably not.  But it's a way to evaluate players outside those mainstream metrics, and thus could result in a competitive advantage in the batter's box.
+
+*Author's note: statistics through July 11, after the All-Star teams were announced.  The NL outfield starters are Ronald Acuna, Crow-Armstrong, and Tucker. Carroll, Kyle Stowers, Tatis, and Wood are the reserves.*

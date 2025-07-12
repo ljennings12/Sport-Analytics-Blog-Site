@@ -4,7 +4,7 @@ author: "Danny Nolan"
 date: "2025-06-25"
 categories: [Basketball, Opinion]
 image: "image.jpg"
-description: "Forecasting the destinations for the next generation of NBA stars"
+description: "Forecasting the destinations for the next generation of NBA stars."
 editor: visual
 ---
 
