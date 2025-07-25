@@ -1,7 +1,7 @@
 ---
 title: "Buyers and Sellers at the MLB Trade Deadline"
 author: "Danny Nolan"
-date: "2025-07-21"
+date: "2025-07-24"
 categories: [Baseball, Opinion]
 image: sandy.jpg
 description: "Thinking through the deadline strategies of all thirty teams."
